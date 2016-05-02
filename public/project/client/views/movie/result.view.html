@@ -1,0 +1,21 @@
+<!-- Page Content -->
+    <div class="row page-content">
+        <!--Page content-->
+        <div>
+            <h1 class="col-lg-9 col-md-9 text-center"
+                ng-show="model.imdbmessage" color="red">Result does not found!</h1>
+        </div>
+        <div class="col-lg-9 col-md-9">
+            <div ng-repeat="movie in model.movies">
+                <div class="thumbnails col-lg-4 col-md-4">
+                    <a href="" ng-click="model.toDetials(movie)"><img ng-src="{{movie.Poster}}" height="200" width="153"></a>
+                    <div class="caption">
+                        <h4>{{movie.Title}}</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Search Bar-->
+        <div ng-include="'views/search/search_bar.view.html'"></div>
+    </div>
+
