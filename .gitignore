@@ -1,3 +1,5 @@
 #####local libraries###########
-node_modules/
+node_modules
 deplist.txt
+.idea
+.openshift
